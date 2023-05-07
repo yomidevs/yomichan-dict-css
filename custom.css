@@ -8,7 +8,7 @@
 }
 
 .definition-item[data-dictionary="明鏡国語辞典"],
-.definition-item[data-dictionary="明鏡国語辞典　第二版"] {
+.definition-item[data-dictionary="明鏡国語辞典 第二版"] {
     background-color: rgba(0, 0, 255, 0.04);
 }
 
@@ -75,6 +75,14 @@
 
 .tag[data-details="広辞苑 第七版"] {
     --tag-color: #333333;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第七版"] {
+    background-color: rgba(255, 187, 112, 0.02);
+}
+
+.tag[data-details="三省堂国語辞典　第七版"] {
+    --tag-color: #e68315;
 }
 
 .definition-tag-list {

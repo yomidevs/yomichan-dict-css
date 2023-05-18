@@ -77,6 +77,49 @@
     --tag-color: #333333;
 }
 
+.definition-item[data-dictionary="四字熟語辞典オンライン"] {
+    background-color: rgba(225, 227, 124, 0.03);
+}
+
+.tag[data-details="四字熟語辞典オンライン"] {
+    --tag-color: #FFE37C;
+    --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
+    background-color: rgba(225, 227, 124, 0.03);
+}
+
+.tag[data-details="故事・ことわざ・慣用句オンライン"] {
+    --tag-color: #FFE37C;
+    --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="国語辞典オンライン"] {
+    background-color: rgba(225, 227, 124, 0.03);
+}
+
+.tag[data-details="国語辞典オンライン"] {
+    --tag-color: #FFE37C;
+    --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="実用日本語表現辞典"] {
+    background-color: rgba(99, 108, 141, 0.03);
+}
+
+.tag[data-details="実用日本語表現辞典"] {
+    --tag-color: #636C8D;
+}
+
+.definition-item[data-dictionary="新明解国語辞典 第五版"] {
+    background-color: rgba(104, 27, 35, 0.03);
+}
+
+.tag[data-details="新明解国語辞典 第五版"] {
+    --tag-color: #681B23;
+}
+
 .definition-tag-list {
     float: left;
     line-height: 1;

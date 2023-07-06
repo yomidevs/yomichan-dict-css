@@ -1,155 +1,121 @@
 .definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
-    background-color: rgba(0, 255, 255, 0.04);
+  background-color: rgba(0, 255, 255, 0.04);
 }
 
 .tag[data-details="旺文社国語辞典 第十一版"] {
-    --tag-color: #bbffff;
-    --tag-text-color: black;
+  --tag-color: #bbffff;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="明鏡国語辞典"],
 .definition-item[data-dictionary="明鏡国語辞典　第二版"] {
-    background-color: rgba(0, 0, 255, 0.04);
+  background-color: rgba(0, 0, 255, 0.04);
 }
 
 .tag[data-details="明鏡国語辞典"],
 .tag[data-details="明鏡国語辞典　第二版"] {
-    --tag-color: #3333dd;
+  --tag-color: #3333dd;
 }
 
 .definition-item[data-dictionary="岩波国語辞典 第六版"] {
-    background-color: rgba(0, 255, 0, 0.02);
+  background-color: rgba(0, 255, 0, 0.02);
 }
 
 .tag[data-details="岩波国語辞典 第六版"] {
-    --tag-color: #335533;
+  --tag-color: #335533;
 }
 
 .definition-item[data-dictionary="新明解国語辞典　第五版"],
 .definition-item[data-dictionary="新明解国語辞典　第七版"] {
-    background-color: rgba(255, 0, 0, 0.02);
+  background-color: rgba(255, 0, 0, 0.02);
 }
 
 .tag[data-details="新明解国語辞典　第五版"],
 .tag[data-details="新明解国語辞典　第七版"] {
-    --tag-color: #ff0000;
+  --tag-color: #ff0000;
 }
 
 .definition-item[data-dictionary="大辞林 第三版"] {
-    background-color: rgba(255, 0, 255, 0.01);
+  background-color: rgba(255, 0, 255, 0.01);
 }
 
 .tag[data-details="大辞林 第三版"] {
-    --tag-color: #552255;
+  --tag-color: #552255;
 }
 
 .definition-item[data-dictionary="デジタル大辞泉"] {
-    background-color: rgba(255, 0, 0, 0.04);
+  background-color: rgba(255, 0, 0, 0.04);
 }
 
 .tag[data-details="デジタル大辞泉"] {
-    --tag-color: #aa0000;
+  --tag-color: #aa0000;
 }
 
 .definition-item[data-dictionary="精選版　日本国語大辞典"] {
-    background-color: rgba(255, 255, 0, 0.02);
+  background-color: rgba(255, 255, 0, 0.02);
 }
 
 .tag[data-details="精選版　日本国語大辞典"] {
-    --tag-color: #eeeecc;
-    --tag-text-color: black;
+  --tag-color: #eeeecc;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="ハイブリッド新辞林"] {
-    background-color: rgba(0, 0, 255, 0.01);
+  background-color: rgba(0, 0, 255, 0.01);
 }
 
 .tag[data-details="ハイブリッド新辞林"] {
-    --tag-color: #ddddee;
-    --tag-text-color: black;
+  --tag-color: #ddddee;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="広辞苑 第七版"] {
-    background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .tag[data-details="広辞苑 第七版"] {
-    --tag-color: #333333;
+  --tag-color: #333333;
 }
 
 .definition-item[data-dictionary="四字熟語辞典オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
+  background-color: rgba(225, 227, 124, 0.03);
 }
 
 .tag[data-details="四字熟語辞典オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
+  --tag-color: #ffe37c;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
+  background-color: rgba(225, 227, 124, 0.03);
 }
 
 .tag[data-details="故事・ことわざ・慣用句オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
+  --tag-color: #ffe37c;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="国語辞典オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
+  background-color: rgba(225, 227, 124, 0.03);
 }
 
 .tag[data-details="国語辞典オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
+  --tag-color: #ffe37c;
+  --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="実用日本語表現辞典"] {
-    background-color: rgba(99, 108, 141, 0.03);
+  background-color: rgba(99, 108, 141, 0.03);
 }
 
 .tag[data-details="実用日本語表現辞典"] {
-    --tag-color: #636C8D;
+  --tag-color: #636c8d;
 }
 
 .definition-item[data-dictionary="新明解国語辞典 第五版"] {
-    background-color: rgba(104, 27, 35, 0.03);
+  background-color: rgba(104, 27, 35, 0.03);
 }
 
 .tag[data-details="新明解国語辞典 第五版"] {
-    --tag-color: #681B23;
-}
-
-.definition-tag-list {
-    float: left;
-    line-height: 1;
-    height: 1em;
-    margin-top: -2px;
-}
-
-.tag {
-    --tag-height: 0;
-}
-
-.definition-list {
-    padding: 0;
-}
-
-.definition-item {
-    display: inline-block;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 0 calc(0px - var(--entry-horizontal-padding));
-    width: 100%;
-    padding: 10px calc(var(--entry-horizontal-padding)) 10px calc(var(--entry-horizontal-padding));
-}
-
-.gloss-content {
-    line-height: 1.05;
-}
-
-.gloss-content br {
-    display: block;
-    margin: 4px;
-    content: " ";
+  --tag-color: #681b23;
 }

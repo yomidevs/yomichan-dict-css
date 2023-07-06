@@ -1,121 +1,305 @@
+/* Darius Dictionary Colorizer
+ * The latest version can be found at
+ * https://github.com/themoeway/yomichan-dict-css
+ */
+
+:root {
+  /* Change this opacity to 0% if you don't want backgrounds to change.
+   * Or increase it if you want them to change more.  
+   */
+  --dict-change-background-color-opacity: 5%;
+  --dict-oubunsha-color: rgb(187, 255, 255);
+  --dict-meikyou-color: rgb(51, 51, 221);
+  --dict-iwanami-color: rgb(51, 85, 51);
+  --dict-shinmeikai-color: rgb(255, 0, 0);
+  --dict-daijirin-color: rgb(85, 34, 85);
+  --dict-daijisen-color: rgb(170, 0, 0);
+  --dict-nikkoku-color: rgb(238, 238, 204);
+  --dict-shinjirin-color: rgb(221, 221, 238);
+  --dict-koujien-color: rgb(51, 51, 51);
+  --dict-yojionline-color: rgb(255, 227, 124);
+  --dict-kotowazaonline-color: rgb(255, 227, 124);
+  --dict-kokugoonline-color: rgb(255, 227, 124);
+  --dict-jitsuyou-color: rgb(99, 108, 141);
+  --dict-sanseidou-color: rgb(229, 107, 57);
+  --dict-jmdict-color: rgb(0, 132, 255);
+  --dict-saitou-je-color: rgb(244, 225, 254);
+  --dict-kk-sinwaei-color: rgb(21, 70, 51);
+  --dict-pixiv-color: rgb(0, 151, 250);
+}
+
+/* oubunsha */
+
 .definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
-  background-color: rgba(0, 255, 255, 0.04);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-oubunsha-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="旺文社国語辞典 第十一版"] {
-  --tag-color: #bbffff;
+  --tag-color: var(--dict-oubunsha-color);
   --tag-text-color: black;
 }
 
+/* meikyou */
+
 .definition-item[data-dictionary="明鏡国語辞典"],
 .definition-item[data-dictionary="明鏡国語辞典　第二版"] {
-  background-color: rgba(0, 0, 255, 0.04);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-meikyou-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="明鏡国語辞典"],
 .tag[data-details="明鏡国語辞典　第二版"] {
-  --tag-color: #3333dd;
+  --tag-color: var(--dict-meikyou-color);
 }
 
-.definition-item[data-dictionary="岩波国語辞典 第六版"] {
-  background-color: rgba(0, 255, 0, 0.02);
+/* iwanami */
+
+.definition-item[data-dictionary="岩波国語辞典 第六版"],
+.definition-item[data-dictionary="岩波国語辞典　第八版"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-iwanami-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
-.tag[data-details="岩波国語辞典 第六版"] {
-  --tag-color: #335533;
+.tag[data-details="岩波国語辞典 第六版"],
+.tag[data-details="岩波国語辞典　第八版"] {
+  --tag-color: var(--dict-iwanami-color);
 }
+
+/* shinmeikai */
 
 .definition-item[data-dictionary="新明解国語辞典　第五版"],
+.definition-item[data-dictionary="新明解国語辞典 第五版"],
 .definition-item[data-dictionary="新明解国語辞典　第七版"] {
-  background-color: rgba(255, 0, 0, 0.02);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-shinmeikai-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="新明解国語辞典　第五版"],
+.tag[data-details="新明解国語辞典 第五版"],
 .tag[data-details="新明解国語辞典　第七版"] {
-  --tag-color: #ff0000;
+  --tag-color: var(--dict-shinmeikai-color);
 }
 
 .definition-item[data-dictionary="大辞林 第三版"] {
-  background-color: rgba(255, 0, 255, 0.01);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-daijirin-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
+/* daijirin */
+
 .tag[data-details="大辞林 第三版"] {
-  --tag-color: #552255;
+  --tag-color: var(--dict-daijirin-color);
 }
 
 .definition-item[data-dictionary="デジタル大辞泉"] {
-  background-color: rgba(255, 0, 0, 0.04);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-daijisen-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
+
+/* daijisen */
 
 .tag[data-details="デジタル大辞泉"] {
-  --tag-color: #aa0000;
+  --tag-color: var(--dict-daijisen-color);
 }
 
+/* nikkoku */
+
 .definition-item[data-dictionary="精選版　日本国語大辞典"] {
-  background-color: rgba(255, 255, 0, 0.02);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-nikkoku-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="精選版　日本国語大辞典"] {
-  --tag-color: #eeeecc;
+  --tag-color: var(--dict-nikkoku-color);
   --tag-text-color: black;
 }
 
+/* shinjirin */
+
 .definition-item[data-dictionary="ハイブリッド新辞林"] {
-  background-color: rgba(0, 0, 255, 0.01);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-shinjirin-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="ハイブリッド新辞林"] {
-  --tag-color: #ddddee;
+  --tag-color: var(--dict-shinjirin-color);
   --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="広辞苑 第七版"] {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-koujien-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
+
+/* koujien */
 
 .tag[data-details="広辞苑 第七版"] {
-  --tag-color: #333333;
+  --tag-color: var(--dict-koujien-color);
 }
 
+/* yojionline */
+
 .definition-item[data-dictionary="四字熟語辞典オンライン"] {
-  background-color: rgba(225, 227, 124, 0.03);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-yojionline-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="四字熟語辞典オンライン"] {
-  --tag-color: #ffe37c;
+  --tag-color: var(--dict-yojionline-color);
   --tag-text-color: black;
 }
 
+/* kotowazaonline */
+
 .definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
-  background-color: rgba(225, 227, 124, 0.03);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-kotowazaonline-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="故事・ことわざ・慣用句オンライン"] {
-  --tag-color: #ffe37c;
+  --tag-color: var(--dict-kotowazaonline-color);
   --tag-text-color: black;
 }
 
+/* kokugoonline */
+
 .definition-item[data-dictionary="国語辞典オンライン"] {
-  background-color: rgba(225, 227, 124, 0.03);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-kokugoonline-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
 .tag[data-details="国語辞典オンライン"] {
-  --tag-color: #ffe37c;
+  --tag-color: var(--dict-kokugoonline-color);
   --tag-text-color: black;
 }
 
 .definition-item[data-dictionary="実用日本語表現辞典"] {
-  background-color: rgba(99, 108, 141, 0.03);
+  background-color: color-mix(
+    in srgb,
+    var(--dict-jitsuyou-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
+
+/* jitsuyou */
 
 .tag[data-details="実用日本語表現辞典"] {
-  --tag-color: #636c8d;
+  --tag-color: var(--dict-jitsuyou-color);
 }
 
-.definition-item[data-dictionary="新明解国語辞典 第五版"] {
-  background-color: rgba(104, 27, 35, 0.03);
+.definition-item[data-dictionary="三省堂国語辞典　第七版"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-sanseidou-color) var(--dict-change-background-color-opacity),
+    white
+  );
 }
 
-.tag[data-details="新明解国語辞典 第五版"] {
-  --tag-color: #681b23;
+/* sanseidou */
+
+.tag[data-details="三省堂国語辞典　第七版"] {
+  --tag-color: var(--dict-sanseidou-color);
 }
+
+/* jmdict */
+
+.definition-item[data-dictionary="JMdict"],
+.definition-item[data-dictionary="JMDict"],
+.definition-item[data-dictionary="JMnedict"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-jmdict-color) var(--dict-change-background-color-opacity),
+    white
+  );
+}
+
+.tag[data-details="JMdict"],
+.tag[data-details="JMDict"],
+.tag[data-details="JMnedict"] {
+  --tag-color: var(--dict-jmdict-color);
+}
+
+/* saitou-je */
+
+.definition-item[data-dictionary="NEW斎藤和英大辞典"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-saitou-je-color) var(--dict-change-background-color-opacity),
+    white
+  );
+}
+
+.tag[data-details="NEW斎藤和英大辞典"] {
+  --tag-color: var(--dict-saitou-je-color);
+  --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="新和英"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-kk-sinwaei-color) var(--dict-change-background-color-opacity),
+    white
+  );
+}
+
+/* kk-sinwaei */
+.tag[data-details="新和英"] {
+  --tag-color: var(--dict-kk-sinwaei-color);
+}
+
+/* pixiv */
+
+.definition-item[data-dictionary="Pixiv"],
+.definition-item[data-dictionary="PixivLite"],
+.definition-item[data-dictionary="PixivLight"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-pixiv-color) var(--dict-change-background-color-opacity),
+    white
+  );
+}
+
+.tag[data-details="Pixiv"],
+.tag[data-details="PixivLite"],
+.tag[data-details="PixivLight"] {
+  --tag-color: var(--dict-pixiv-color);
+}
+
+/* End Dictionary Colorizer */

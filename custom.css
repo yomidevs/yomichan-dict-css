@@ -93,6 +93,8 @@
   --tag-color: var(--dict-shinmeikai-color);
 }
 
+/* daijirin */
+
 .definition-item[data-dictionary="大辞林 第三版"] {
   background-color: color-mix(
     in srgb,
@@ -101,11 +103,11 @@
   );
 }
 
-/* daijirin */
-
 .tag[data-details="大辞林 第三版"] {
   --tag-color: var(--dict-daijirin-color);
 }
+
+/* daijisen */
 
 .definition-item[data-dictionary="デジタル大辞泉"] {
   background-color: color-mix(
@@ -114,8 +116,6 @@
     white
   );
 }
-
-/* daijisen */
 
 .tag[data-details="デジタル大辞泉"] {
   --tag-color: var(--dict-daijisen-color);
@@ -151,6 +151,8 @@
   --tag-text-color: black;
 }
 
+/* koujien */
+
 .definition-item[data-dictionary="広辞苑 第七版"] {
   background-color: color-mix(
     in srgb,
@@ -158,8 +160,6 @@
     white
   );
 }
-
-/* koujien */
 
 .tag[data-details="広辞苑 第七版"] {
   --tag-color: var(--dict-koujien-color);
@@ -210,6 +210,8 @@
   --tag-text-color: black;
 }
 
+/* jitsuyou */
+
 .definition-item[data-dictionary="実用日本語表現辞典"] {
   background-color: color-mix(
     in srgb,
@@ -218,11 +220,11 @@
   );
 }
 
-/* jitsuyou */
-
 .tag[data-details="実用日本語表現辞典"] {
   --tag-color: var(--dict-jitsuyou-color);
 }
+
+/* sanseidou */
 
 .definition-item[data-dictionary="三省堂国語辞典　第七版"] {
   background-color: color-mix(
@@ -231,8 +233,6 @@
     white
   );
 }
-
-/* sanseidou */
 
 .tag[data-details="三省堂国語辞典　第七版"] {
   --tag-color: var(--dict-sanseidou-color);
@@ -271,6 +271,8 @@
   --tag-text-color: black;
 }
 
+/* kk-sinwaei */
+
 .definition-item[data-dictionary="新和英"] {
   background-color: color-mix(
     in srgb,
@@ -279,7 +281,6 @@
   );
 }
 
-/* kk-sinwaei */
 .tag[data-details="新和英"] {
   --tag-color: var(--dict-kk-sinwaei-color);
 }

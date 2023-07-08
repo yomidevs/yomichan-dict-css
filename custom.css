@@ -5,27 +5,47 @@
 
 :root {
   /* Change this opacity to 0% if you don't want backgrounds to change.
-   * Or increase it if you want them to change more.  
+   * Or increase it if you want them to change more. 
    */
-  --dict-change-background-color-opacity: 5%;
+  --dict-change-background-color-opacity: 100%;
   --dict-oubunsha-color: rgb(187, 255, 255);
+  --dict-oubunsha-opacity: 0.06;
   --dict-meikyou-color: rgb(51, 51, 221);
+  --dict-meikyou-opacity: 0.03;
   --dict-iwanami-color: rgb(51, 85, 51);
+  --dict-iwanami-opacity: 0.05;
   --dict-shinmeikai-color: rgb(255, 0, 0);
+  --dict-shinmeikai-opacity: 0.025;
   --dict-daijirin-color: rgb(85, 34, 85);
+  --dict-daijirin-opacity: 0.03;
   --dict-daijisen-color: rgb(170, 0, 0);
+  --dict-daijisen-opacity: 0.04;
   --dict-nikkoku-color: rgb(238, 238, 204);
+  --dict-nikkoku-opacity: 0.05;
   --dict-shinjirin-color: rgb(221, 221, 238);
+  --dict-shinjirin-opacity: 0.15;
   --dict-koujien-color: rgb(51, 51, 51);
+  --dict-koujien-opacity: 0.05;
   --dict-yojionline-color: rgb(255, 227, 124);
+  --dict-yojionline-opacity: 0.05;
   --dict-kotowazaonline-color: rgb(255, 227, 124);
+  --dict-kotowazaonline-opacity: 0.05;
   --dict-kokugoonline-color: rgb(255, 227, 124);
+  --dict-kokugoonline-opacity: 0.05;
   --dict-jitsuyou-color: rgb(99, 108, 141);
+  --dict-jitsuyou-opacity: 0.05;
   --dict-sanseidou-color: rgb(229, 107, 57);
+  --dict-sanseidou-opacity: 0.03;
   --dict-jmdict-color: rgb(0, 132, 255);
+  --dict-jmdict-opacity: 0.02;
   --dict-saitou-je-color: rgb(244, 225, 254);
+  --dict-saitou-je-opacity: 0.15;
   --dict-kk-sinwaei-color: rgb(21, 70, 51);
+  --dict-kk-sinwaei-opacity: 0.03;
   --dict-pixiv-color: rgb(0, 151, 250);
+  --dict-pixiv-opacity: 0.03;
+  --dict-kanjigen-color: rgb(201, 149, 93);
+  --dict-kanjigen-opacity: 0.05;
 }
 
 /* oubunsha */
@@ -33,8 +53,12 @@
 .definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-oubunsha-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-oubunsha-color)
+      calc(
+        var(--dict-oubunsha-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -49,8 +73,12 @@
 .definition-item[data-dictionary="明鏡国語辞典　第二版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-meikyou-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-meikyou-color)
+      calc(
+        var(--dict-meikyou-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -65,8 +93,12 @@
 .definition-item[data-dictionary="岩波国語辞典　第八版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-iwanami-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-iwanami-color)
+      calc(
+        var(--dict-iwanami-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -82,8 +114,12 @@
 .definition-item[data-dictionary="新明解国語辞典　第七版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-shinmeikai-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-shinmeikai-color)
+      calc(
+        var(--dict-shinmeikai-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -98,8 +134,12 @@
 .definition-item[data-dictionary="大辞林 第三版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-daijirin-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-daijirin-color)
+      calc(
+        var(--dict-daijirin-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -112,8 +152,12 @@
 .definition-item[data-dictionary="デジタル大辞泉"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-daijisen-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-daijisen-color)
+      calc(
+        var(--dict-daijisen-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -126,8 +170,12 @@
 .definition-item[data-dictionary="精選版　日本国語大辞典"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-nikkoku-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-nikkoku-color)
+      calc(
+        var(--dict-nikkoku-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -141,8 +189,12 @@
 .definition-item[data-dictionary="ハイブリッド新辞林"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-shinjirin-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-shinjirin-color)
+      calc(
+        var(--dict-shinjirin-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -156,8 +208,12 @@
 .definition-item[data-dictionary="広辞苑 第七版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-koujien-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-koujien-color)
+      calc(
+        var(--dict-koujien-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -170,8 +226,12 @@
 .definition-item[data-dictionary="四字熟語辞典オンライン"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-yojionline-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-yojionline-color)
+      calc(
+        var(--dict-yojionline-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -185,8 +245,12 @@
 .definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-kotowazaonline-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-kotowazaonline-color)
+      calc(
+        var(--dict-kotowazaonline-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -200,8 +264,12 @@
 .definition-item[data-dictionary="国語辞典オンライン"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-kokugoonline-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-kokugoonline-color)
+      calc(
+        var(--dict-kokugoonline-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -215,8 +283,12 @@
 .definition-item[data-dictionary="実用日本語表現辞典"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-jitsuyou-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-jitsuyou-color)
+      calc(
+        var(--dict-jitsuyou-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -229,8 +301,12 @@
 .definition-item[data-dictionary="三省堂国語辞典　第七版"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-sanseidou-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-sanseidou-color)
+      calc(
+        var(--dict-sanseidou-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -245,8 +321,11 @@
 .definition-item[data-dictionary="JMnedict"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-jmdict-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-jmdict-color)
+      calc(
+        var(--dict-jmdict-opacity) * var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -261,8 +340,12 @@
 .definition-item[data-dictionary="NEW斎藤和英大辞典"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-saitou-je-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-saitou-je-color)
+      calc(
+        var(--dict-saitou-je-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -276,8 +359,12 @@
 .definition-item[data-dictionary="新和英"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-kk-sinwaei-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-kk-sinwaei-color)
+      calc(
+        var(--dict-kk-sinwaei-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -292,8 +379,11 @@
 .definition-item[data-dictionary="PixivLight"] {
   background-color: color-mix(
     in srgb,
-    var(--dict-pixiv-color) var(--dict-change-background-color-opacity),
-    white
+    var(--dict-pixiv-color)
+      calc(
+        var(--dict-pixiv-opacity) * var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
   );
 }
 
@@ -301,6 +391,24 @@
 .tag[data-details="PixivLite"],
 .tag[data-details="PixivLight"] {
   --tag-color: var(--dict-pixiv-color);
+}
+
+/* kanjigen */
+
+.definition-item[data-dictionary="漢字源"] {
+  background-color: color-mix(
+    in srgb,
+    var(--dict-kanjigen-color)
+      calc(
+        var(--dict-kanjigen-opacity) *
+          var(--dict-change-background-color-opacity)
+      ),
+    var(--background-color)
+  );
+}
+
+.tag[data-details="漢字源"] {
+  --tag-color: var(--dict-kanjigen-color);
 }
 
 /* End Dictionary Colorizer */

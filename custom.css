@@ -98,5 +98,74 @@
   --dict-color: rgb(201, 149, 93);
   --dict-bg-opacity: 0.05;
 }
+.definition-item[data-dictionary="日本語俗語辞書"] {
+  --dict-color: rgb(176, 4, 157);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="weblio古語辞典"] {
+  --dict-color: rgb(193, 123, 148);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="語源由来辞典"] {
+  --dict-color: rgb(206, 169, 47);
+  --dict-bg-opacity: 0.05;
+}
+/* also covers Canto CEDICT */
+.definition-item[data-dictionary*="CEDICT"] {
+  --dict-color: rgb(32, 48, 64);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary^="中日大辞典"] {
+  --dict-color: rgb(223, 72, 79);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="漢語大詞典"] {
+  --dict-color: rgb(160, 19, 23);
+  --dict-bg-opacity: 0.05;
+}
+/* also 萌典国语辞典 */
+.definition-item[data-dictionary^="萌典"] {
+  --dict-color: rgb(255, 221, 212);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="兩岸詞典"] {
+  --dict-color: rgb(62, 94, 143);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="牛津英汉汉英词典"] {
+  --dict-color: rgb(15, 58, 124);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="五南國語活用辭典"] {
+  --dict-color: rgb(251, 150, 60);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="譯典通英漢雙向字典"] {
+  --dict-color: rgb(172, 76, 77);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="现代汉语规范词典"] {
+  --dict-color: rgb(232, 25, 15);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="CantoDict"] {
+  --dict-color: rgb(243, 255, 245);
+  --dict-bg-opacity: 0.1;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary^="Words.hk"] {
+  --dict-color: rgb(96, 104, 112);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="CE Wiktionary"] {
+  --dict-color: rgb(235, 206, 161);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="CC-Canto"] {
+  --dict-color: rgb(34, 34, 34);
+  --dict-bg-opacity: 0.03;
+}
 
 /* End Dictionary Colorizer */

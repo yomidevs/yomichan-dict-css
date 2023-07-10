@@ -1,6 +1,6 @@
 # yomichan-dict-css
 
-Yomichan custom CSS to color dictionaries by name.
+Yomichan custom CSS to color dictionaries by name. This currently supports most significant Japanese as well as Chinese/Cantonese dictionaries that are available for Yomichan.
 
 Please only obtain dictionaries by legal means.
 

@@ -111,7 +111,8 @@
 
 .definition-item[data-dictionary="新明解国語辞典　第五版"],
 .definition-item[data-dictionary="新明解国語辞典 第五版"],
-.definition-item[data-dictionary="新明解国語辞典　第七版"] {
+.definition-item[data-dictionary="新明解国語辞典　第七版"],
+.definition-item[data-dictionary="新明解国語辞典　第八版"] {
   background-color: color-mix(
     in srgb,
     var(--dict-shinmeikai-color)
@@ -125,13 +126,15 @@
 
 .tag[data-details="新明解国語辞典　第五版"],
 .tag[data-details="新明解国語辞典 第五版"],
-.tag[data-details="新明解国語辞典　第七版"] {
+.tag[data-details="新明解国語辞典　第七版"],
+.tag[data-details="新明解国語辞典　第八版"] {
   --tag-color: var(--dict-shinmeikai-color);
 }
 
 /* daijirin */
 
-.definition-item[data-dictionary="大辞林 第三版"] {
+.definition-item[data-dictionary="大辞林 第三版"],
+.definition-item[data-dictionary="大辞林　第四版"] {
   background-color: color-mix(
     in srgb,
     var(--dict-daijirin-color)
@@ -143,7 +146,8 @@
   );
 }
 
-.tag[data-details="大辞林 第三版"] {
+.tag[data-details="大辞林 第三版"],
+.tag[data-details="大辞林　第四版"] {
   --tag-color: var(--dict-daijirin-color);
 }
 

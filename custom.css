@@ -19,7 +19,8 @@
   --tag-dictionary-background-color: var(--dict-color);
 }
 
-.definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
+.definition-item[data-dictionary="旺文社国語辞典 第十一版"],
+.definition-item[data-dictionary="旺文社国語辞典 第十一版 画像無し"] {
   --dict-color: rgb(187, 255, 255);
   --dict-bg-opacity: 0.06;
   --tag-text-color: black;

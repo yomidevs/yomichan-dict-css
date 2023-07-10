@@ -21,6 +21,8 @@
   --tag-dictionary-background-color: var(--dict-color);
 }
 
+/* Japanese Dicts */
+
 .definition-item[data-dictionary^="旺文社国語辞典"] {
   --dict-color: rgb(187, 255, 255);
   --dict-bg-opacity: 0.06;
@@ -110,6 +112,9 @@
   --dict-color: rgb(206, 169, 47);
   --dict-bg-opacity: 0.05;
 }
+
+/* Chinese Dicts */
+
 /* also covers Canto CEDICT */
 .definition-item[data-dictionary*="CEDICT"] {
   --dict-color: rgb(32, 48, 64);

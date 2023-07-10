@@ -21,30 +21,24 @@
   --tag-dictionary-background-color: var(--dict-color);
 }
 
-.definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
+.definition-item[data-dictionary^="旺文社国語辞典"] {
   --dict-color: rgb(187, 255, 255);
   --dict-bg-opacity: 0.06;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary="明鏡国語辞典"],
-.definition-item[data-dictionary="明鏡国語辞典　第二版"] {
+.definition-item[data-dictionary^="明鏡国語辞典"] {
   --dict-color: rgb(51, 51, 221);
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary="岩波国語辞典 第六版"],
-.definition-item[data-dictionary="岩波国語辞典　第八版"] {
+.definition-item[data-dictionary^="岩波国語辞"] {
   --dict-color: rgb(51, 85, 51);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary="新明解国語辞典　第五版"],
-.definition-item[data-dictionary="新明解国語辞典 第五版"],
-.definition-item[data-dictionary="新明解国語辞典　第七版"],
-.definition-item[data-dictionary="新明解国語辞典　第八版"] {
+.definition-item[data-dictionary^="新明解国語辞典"] {
   --dict-color: rgb(255, 0, 0);
   --dict-bg-opacity: 0.025;
 }
-.definition-item[data-dictionary="大辞林 第三版"],
-.definition-item[data-dictionary="大辞林　第四版"] {
+.definition-item[data-dictionary^="大辞林"] {
   --dict-color: rgb(85, 34, 85);
   --dict-bg-opacity: 0.03;
 }
@@ -62,7 +56,7 @@
   --dict-bg-opacity: 0.15;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary="広辞苑 第七版"] {
+.definition-item[data-dictionary^="広辞苑"] {
   --dict-color: rgb(51, 51, 51);
   --dict-bg-opacity: 0.05;
 }
@@ -77,7 +71,7 @@
   --dict-color: rgb(99, 108, 141);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary="三省堂国語辞典　第七版"] {
+.definition-item[data-dictionary^="三省堂国語辞典"] {
   --dict-color: rgb(229, 107, 57);
   --dict-bg-opacity: 0.03;
 }
@@ -96,9 +90,7 @@
   --dict-color: rgb(21, 70, 51);
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary="Pixiv"],
-.definition-item[data-dictionary="PixivLite"],
-.definition-item[data-dictionary="PixivLight"] {
+.definition-item[data-dictionary^="Pixiv"] {
   --dict-color: rgb(0, 151, 250);
   --dict-bg-opacity: 0.03;
 }

@@ -126,7 +126,7 @@
 /* also 萌典国语辞典 */
 .definition-item[data-dictionary^="萌典"] {
   --dict-color: rgb(255, 221, 212);
-  --dict-bg-opacity: 0.05;
+  --dict-bg-opacity: 0.12;
   --tag-text-color: black;
 }
 .definition-item[data-dictionary="兩岸詞典"] {
@@ -150,7 +150,7 @@
   --dict-bg-opacity: 0.03;
 }
 .definition-item[data-dictionary="CantoDict"] {
-  --dict-color: rgb(243, 255, 245);
+  --dict-color: rgb(203, 255, 212);
   --dict-bg-opacity: 0.1;
   --tag-text-color: black;
 }

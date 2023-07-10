@@ -1,155 +1,108 @@
-.definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
-    background-color: rgba(0, 255, 255, 0.04);
-}
+/* Darius Dictionary Colorizer
+ * The latest version can be found at
+ * https://github.com/themoeway/yomichan-dict-css
+ */
 
-.tag[data-details="旺文社国語辞典 第十一版"] {
-    --tag-color: #bbffff;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="明鏡国語辞典"],
-.definition-item[data-dictionary="明鏡国語辞典　第二版"] {
-    background-color: rgba(0, 0, 255, 0.04);
-}
-
-.tag[data-details="明鏡国語辞典"],
-.tag[data-details="明鏡国語辞典　第二版"] {
-    --tag-color: #3333dd;
-}
-
-.definition-item[data-dictionary="岩波国語辞典 第六版"] {
-    background-color: rgba(0, 255, 0, 0.02);
-}
-
-.tag[data-details="岩波国語辞典 第六版"] {
-    --tag-color: #335533;
-}
-
-.definition-item[data-dictionary="新明解国語辞典　第五版"],
-.definition-item[data-dictionary="新明解国語辞典　第七版"] {
-    background-color: rgba(255, 0, 0, 0.02);
-}
-
-.tag[data-details="新明解国語辞典　第五版"],
-.tag[data-details="新明解国語辞典　第七版"] {
-    --tag-color: #ff0000;
-}
-
-.definition-item[data-dictionary="大辞林 第三版"] {
-    background-color: rgba(255, 0, 255, 0.01);
-}
-
-.tag[data-details="大辞林 第三版"] {
-    --tag-color: #552255;
-}
-
-.definition-item[data-dictionary="デジタル大辞泉"] {
-    background-color: rgba(255, 0, 0, 0.04);
-}
-
-.tag[data-details="デジタル大辞泉"] {
-    --tag-color: #aa0000;
-}
-
-.definition-item[data-dictionary="精選版　日本国語大辞典"] {
-    background-color: rgba(255, 255, 0, 0.02);
-}
-
-.tag[data-details="精選版　日本国語大辞典"] {
-    --tag-color: #eeeecc;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="ハイブリッド新辞林"] {
-    background-color: rgba(0, 0, 255, 0.01);
-}
-
-.tag[data-details="ハイブリッド新辞林"] {
-    --tag-color: #ddddee;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="広辞苑 第七版"] {
-    background-color: rgba(0, 0, 0, 0.03);
-}
-
-.tag[data-details="広辞苑 第七版"] {
-    --tag-color: #333333;
-}
-
-.definition-item[data-dictionary="四字熟語辞典オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
-}
-
-.tag[data-details="四字熟語辞典オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
-}
-
-.tag[data-details="故事・ことわざ・慣用句オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="国語辞典オンライン"] {
-    background-color: rgba(225, 227, 124, 0.03);
-}
-
-.tag[data-details="国語辞典オンライン"] {
-    --tag-color: #FFE37C;
-    --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="実用日本語表現辞典"] {
-    background-color: rgba(99, 108, 141, 0.03);
-}
-
-.tag[data-details="実用日本語表現辞典"] {
-    --tag-color: #636C8D;
-}
-
-.definition-item[data-dictionary="新明解国語辞典 第五版"] {
-    background-color: rgba(104, 27, 35, 0.03);
-}
-
-.tag[data-details="新明解国語辞典 第五版"] {
-    --tag-color: #681B23;
-}
-
-.definition-tag-list {
-    float: left;
-    line-height: 1;
-    height: 1em;
-    margin-top: -2px;
-}
-
-.tag {
-    --tag-height: 0;
-}
-
-.definition-list {
-    padding: 0;
+:root {
+  /* Change this opacity to 0% if you don't want backgrounds to change.
+   * Or increase it if you want them to change more. 
+   */
+  --dict-color-opacity: 100%;
 }
 
 .definition-item {
-    display: inline-block;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 0 calc(0px - var(--entry-horizontal-padding));
-    width: 100%;
-    padding: 10px calc(var(--entry-horizontal-padding)) 10px calc(var(--entry-horizontal-padding));
+  background-color: color-mix(
+    in srgb,
+    var(--dict-color) calc(var(--dict-bg-opacity) * var(--dict-color-opacity)),
+    var(--background-color)
+  );
+  --tag-dictionary-background-color: var(--dict-color);
 }
 
-.gloss-content {
-    line-height: 1.05;
+.definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
+  --dict-color: rgb(187, 255, 255);
+  --dict-bg-opacity: 0.06;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="明鏡国語辞典"],
+.definition-item[data-dictionary="明鏡国語辞典　第二版"] {
+  --dict-color: rgb(51, 51, 221);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="岩波国語辞典 第六版"],
+.definition-item[data-dictionary="岩波国語辞典　第八版"] {
+  --dict-color: rgb(51, 85, 51);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="新明解国語辞典　第五版"],
+.definition-item[data-dictionary="新明解国語辞典 第五版"],
+.definition-item[data-dictionary="新明解国語辞典　第七版"],
+.definition-item[data-dictionary="新明解国語辞典　第八版"] {
+  --dict-color: rgb(255, 0, 0);
+  --dict-bg-opacity: 0.025;
+}
+.definition-item[data-dictionary="大辞林 第三版"],
+.definition-item[data-dictionary="大辞林　第四版"] {
+  --dict-color: rgb(85, 34, 85);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="デジタル大辞泉"] {
+  --dict-color: rgb(170, 0, 0);
+  --dict-bg-opacity: 0.04;
+}
+.definition-item[data-dictionary="精選版　日本国語大辞典"] {
+  --dict-color: rgb(238, 238, 204);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="ハイブリッド新辞林"] {
+  --dict-color: rgb(221, 221, 238);
+  --dict-bg-opacity: 0.15;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="広辞苑 第七版"] {
+  --dict-color: rgb(51, 51, 51);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="四字熟語辞典オンライン"],
+.definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"],
+.definition-item[data-dictionary="国語辞典オンライン"] {
+  --dict-color: rgb(255, 227, 124);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="実用日本語表現辞典"] {
+  --dict-color: rgb(99, 108, 141);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="三省堂国語辞典　第七版"] {
+  --dict-color: rgb(229, 107, 57);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="JMdict"],
+.definition-item[data-dictionary="JMDict"],
+.definition-item[data-dictionary="JMnedict"] {
+  --dict-color: rgb(0, 132, 255);
+  --dict-bg-opacity: 0.02;
+}
+.definition-item[data-dictionary="NEW斎藤和英大辞典"] {
+  --dict-color: rgb(244, 225, 254);
+  --dict-bg-opacity: 0.15;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="新和英"] {
+  --dict-color: rgb(21, 70, 51);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="Pixiv"],
+.definition-item[data-dictionary="PixivLite"],
+.definition-item[data-dictionary="PixivLight"] {
+  --dict-color: rgb(0, 151, 250);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="漢字源"] {
+  --dict-color: rgb(201, 149, 93);
+  --dict-bg-opacity: 0.05;
 }
 
-.gloss-content br {
-    display: block;
-    margin: 4px;
-    content: " ";
-}
+/* End Dictionary Colorizer */

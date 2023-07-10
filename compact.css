@@ -1,0 +1,38 @@
+/* CSS for making dictionary entries more compact */
+
+.definition-tag-list {
+  float: left;
+  line-height: 1;
+  height: 1em;
+  margin-top: -2px;
+}
+
+.tag {
+  --tag-height: 0;
+}
+
+.definition-list {
+  padding: 0;
+}
+
+.definition-item {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 calc(0px - var(--entry-horizontal-padding));
+  width: 100%;
+  padding: 10px calc(var(--entry-horizontal-padding)) 10px
+    calc(var(--entry-horizontal-padding));
+}
+
+.gloss-content {
+  line-height: 1.05;
+}
+
+.gloss-content br {
+  display: block;
+  margin: 4px;
+  content: " ";
+}
+
+/* End compact dictionary CSS */

@@ -8,6 +8,8 @@
    * Or increase it if you want them to change more. 
    */
   --dict-color-opacity: 100%;
+  --dict-color: var(--tag-dictionary-background-color);
+  --dict-bg-opacity: 0;
 }
 
 .definition-item {

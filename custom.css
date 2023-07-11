@@ -8,6 +8,8 @@
    * Or increase it if you want them to change more. 
    */
   --dict-color-opacity: 100%;
+  --dict-color: var(--tag-dictionary-background-color);
+  --dict-bg-opacity: 0;
 }
 
 .definition-item {
@@ -19,30 +21,26 @@
   --tag-dictionary-background-color: var(--dict-color);
 }
 
-.definition-item[data-dictionary="旺文社国語辞典 第十一版"] {
+/* Japanese Dicts */
+
+.definition-item[data-dictionary^="旺文社国語辞典"] {
   --dict-color: rgb(187, 255, 255);
   --dict-bg-opacity: 0.06;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary="明鏡国語辞典"],
-.definition-item[data-dictionary="明鏡国語辞典　第二版"] {
+.definition-item[data-dictionary^="明鏡国語辞典"] {
   --dict-color: rgb(51, 51, 221);
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary="岩波国語辞典 第六版"],
-.definition-item[data-dictionary="岩波国語辞典　第八版"] {
+.definition-item[data-dictionary^="岩波国語辞"] {
   --dict-color: rgb(51, 85, 51);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary="新明解国語辞典　第五版"],
-.definition-item[data-dictionary="新明解国語辞典 第五版"],
-.definition-item[data-dictionary="新明解国語辞典　第七版"],
-.definition-item[data-dictionary="新明解国語辞典　第八版"] {
+.definition-item[data-dictionary^="新明解国語辞典"] {
   --dict-color: rgb(255, 0, 0);
   --dict-bg-opacity: 0.025;
 }
-.definition-item[data-dictionary="大辞林 第三版"],
-.definition-item[data-dictionary="大辞林　第四版"] {
+.definition-item[data-dictionary^="大辞林"] {
   --dict-color: rgb(85, 34, 85);
   --dict-bg-opacity: 0.03;
 }
@@ -60,7 +58,7 @@
   --dict-bg-opacity: 0.15;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary="広辞苑 第七版"] {
+.definition-item[data-dictionary^="広辞苑"] {
   --dict-color: rgb(51, 51, 51);
   --dict-bg-opacity: 0.05;
 }
@@ -75,13 +73,13 @@
   --dict-color: rgb(99, 108, 141);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary="三省堂国語辞典　第七版"] {
+.definition-item[data-dictionary^="三省堂国語辞典"] {
   --dict-color: rgb(229, 107, 57);
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary="JMdict"],
-.definition-item[data-dictionary="JMDict"],
-.definition-item[data-dictionary="JMnedict"] {
+.definition-item[data-dictionary^="JMdict"],
+.definition-item[data-dictionary^="JMDict"],
+.definition-item[data-dictionary^="JMnedict"] {
   --dict-color: rgb(0, 132, 255);
   --dict-bg-opacity: 0.02;
 }
@@ -94,15 +92,85 @@
   --dict-color: rgb(21, 70, 51);
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary="Pixiv"],
-.definition-item[data-dictionary="PixivLite"],
-.definition-item[data-dictionary="PixivLight"] {
+.definition-item[data-dictionary^="Pixiv"] {
   --dict-color: rgb(0, 151, 250);
   --dict-bg-opacity: 0.03;
 }
 .definition-item[data-dictionary="漢字源"] {
   --dict-color: rgb(201, 149, 93);
   --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="日本語俗語辞書"] {
+  --dict-color: rgb(176, 4, 157);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="weblio古語辞典"] {
+  --dict-color: rgb(193, 123, 148);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="語源由来辞典"] {
+  --dict-color: rgb(206, 169, 47);
+  --dict-bg-opacity: 0.05;
+}
+
+/* Chinese Dicts */
+
+/* also covers Canto CEDICT */
+.definition-item[data-dictionary*="CEDICT"] {
+  --dict-color: rgb(32, 48, 64);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary^="中日大辞典"] {
+  --dict-color: rgb(223, 72, 79);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="漢語大詞典"] {
+  --dict-color: rgb(160, 19, 23);
+  --dict-bg-opacity: 0.05;
+}
+/* also 萌典国语辞典 */
+.definition-item[data-dictionary^="萌典"] {
+  --dict-color: rgb(255, 221, 212);
+  --dict-bg-opacity: 0.12;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="兩岸詞典"] {
+  --dict-color: rgb(62, 94, 143);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="牛津英汉汉英词典"] {
+  --dict-color: rgb(15, 58, 124);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="五南國語活用辭典"] {
+  --dict-color: rgb(251, 150, 60);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="譯典通英漢雙向字典"] {
+  --dict-color: rgb(172, 76, 77);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="现代汉语规范词典"] {
+  --dict-color: rgb(232, 25, 15);
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="CantoDict"] {
+  --dict-color: rgb(203, 255, 212);
+  --dict-bg-opacity: 0.1;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary^="Words.hk"] {
+  --dict-color: rgb(96, 104, 112);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="CE Wiktionary"] {
+  --dict-color: rgb(235, 206, 161);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="CC-Canto"] {
+  --dict-color: rgb(34, 34, 34);
+  --dict-bg-opacity: 0.03;
 }
 
 /* End Dictionary Colorizer */

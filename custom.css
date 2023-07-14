@@ -36,7 +36,7 @@
   --dict-color: rgb(51, 85, 51);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary^="新明解国語辞典"] {
+.definition-item[data-dictionary*="新明解"] {
   --dict-color: rgb(255, 0, 0);
   --dict-bg-opacity: 0.025;
 }
@@ -111,6 +111,36 @@
 .definition-item[data-dictionary="語源由来辞典"] {
   --dict-color: rgb(206, 169, 47);
   --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="学研 四字熟語辞典"] {
+  --dict-color: rgb(180, 192, 152);
+  --dict-bg-opacity: 0.08;
+  --tag-text-color: black;
+}
+.definition-item[data-dictionary="故事ことわざの辞典"] {
+  --dict-color: rgb(117, 87, 85);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary^="日本語文法辞典"] {
+  --dict-color: rgb(23, 59, 173);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="絵でわかる日本語"] {
+  --dict-color: rgb(207, 76, 110);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="JLPT文法解説まとめ"] {
+  --dict-color: rgb(244, 66, 54);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="どんなときどう使う 日本語表現文型辞典"] {
+  --dict-color: rgb(126, 168, 232);
+  --dict-bg-opacity: 0.08;
+}
+.definition-item[data-dictionary="毎日のんびり日本語教師"] {
+  --dict-color: rgb(255, 216, 228);
+  --dict-bg-opacity: 0.12;
+  --tag-text-color: black;
 }
 
 /* Chinese Dicts */

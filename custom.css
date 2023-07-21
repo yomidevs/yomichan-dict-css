@@ -203,4 +203,52 @@
   --dict-bg-opacity: 0.03;
 }
 
+/* Frequency Dicts */
+
+/* Japanese Frequency */
+.frequency-group-item[data-details="JPDB"] {
+  --tag-frequency-background-color: #ff3e3d;
+}
+.frequency-group-item[data-details^="Innocent"] {
+  --tag-frequency-background-color: #e82c9c;
+}
+.frequency-group-item[data-details="Novels"] {
+  --tag-frequency-background-color: #e537fa;
+}
+.frequency-group-item[data-details^="BCCWJ"] {
+  --tag-frequency-background-color: #8f27e3;
+}
+.frequency-group-item[data-details="CC100"] {
+  --tag-frequency-background-color: #6238fa;
+}
+.frequency-group-item[data-details="Conversation Corpus"] {
+  --tag-frequency-background-color: #273ce3;
+}
+.frequency-group-item[data-details="青空文庫熟語"] {
+  --tag-frequency-background-color: #3d93ff;
+}
+
+/* Chinese Frequency */
+.frequency-group-item[data-details="HSK"] {
+  --tag-frequency-background-color: #ff3e3d;
+}
+.frequency-group-item[data-details="BLCUlit"] {
+  --tag-frequency-background-color: #e82c9c;
+}
+.frequency-group-item[data-details="SUBTLEX-CH"] {
+  --tag-frequency-background-color: #e537fa;
+}
+.frequency-group-item[data-details="BLCUcoll"] {
+  --tag-frequency-background-color: #8f27e3;
+}
+.frequency-group-item[data-details="BLCUmixed"] {
+  --tag-frequency-background-color: #6238fa;
+}
+.frequency-group-item[data-details="BLCUnews"] {
+  --tag-frequency-background-color: #273ce3;
+}
+.frequency-group-item[data-details="BLCUsci"] {
+  --tag-frequency-background-color: #3d93ff;
+}
+
 /* End Dictionary Colorizer */

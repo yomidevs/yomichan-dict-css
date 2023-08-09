@@ -142,6 +142,10 @@
   --dict-bg-opacity: 0.12;
   --tag-text-color: black;
 }
+.definition-item[data-dictionary^="新選国語辞典"] {
+  --dict-color: #0073C4;
+  --dict-bg-opacity: 0.03;
+}
 
 /* Chinese Dicts */
 

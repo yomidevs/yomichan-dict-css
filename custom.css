@@ -143,7 +143,13 @@
   --tag-text-color: black;
 }
 .definition-item[data-dictionary^="新選国語辞典"] {
-  --dict-color: #0073C4;
+  --dict-color: #0073c4;
+  --dict-bg-opacity: 0.03;
+}
+/* goo.ne.jp */
+.definition-item[data-dictionary^="使い方の分かる 類語例解辞典"],
+.definition-item[data-dictionary^="全国方言辞典"] {
+  --dict-color: #9c4836;
   --dict-bg-opacity: 0.03;
 }
 
@@ -230,6 +236,9 @@
 }
 .frequency-group-item[data-details="青空文庫熟語"] {
   --tag-frequency-background-color: #3d93ff;
+}
+.frequency-group-item[data-details="Youtube"] {
+  --tag-frequency-background-color: #fd0101;
 }
 
 /* Chinese Frequency */

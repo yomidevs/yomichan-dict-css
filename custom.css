@@ -80,7 +80,7 @@
 .definition-item[data-dictionary^="JMdict"],
 .definition-item[data-dictionary^="JMDict"],
 .definition-item[data-dictionary^="JMnedict"],
-.definition-item[data-dictionary^="Jitendex"] {
+.definition-item[data-dictionary^="Jitendex"]  {
   --dict-color: rgb(0, 132, 255);
   --dict-bg-opacity: 0.02;
 }

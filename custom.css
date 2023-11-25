@@ -184,6 +184,18 @@
   --tag-color: rgb(0, 132, 255);
 }
 
+/* Pitch Accent */
+
+.tag[data-category="pronunciation-dictionary"][data-details="NHK"] {
+  --tag-color: #0076d0;
+}
+.tag[data-category="pronunciation-dictionary"][data-details^="大辞泉"] {
+  --tag-color: rgb(170, 0, 0);
+}
+.tag[data-category="pronunciation-dictionary"][data-details^="大辞林"] {
+  --tag-color: rgb(85, 34, 85);
+}
+
 /* Chinese Dicts */
 
 /* also covers Canto CEDICT */

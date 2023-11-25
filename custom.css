@@ -154,6 +154,14 @@
   --dict-color: #9c4836;
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary^="新語時事用語辞典"] {
+  --dict-color: #6e9ac6;
+  --dict-bg-opacity: 0.07;
+}
+.definition-item[data-dictionary^="漢字ペディア同訓異義"] {
+  --dict-color: #b7b7b7;
+  --dict-bg-opacity: 0.12;
+}
 
 /* Kanji Dicts */
 

@@ -256,6 +256,10 @@
   --dict-color: rgb(34, 34, 34);
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary="Wenlin ABC"] {
+  --dict-color: #ffca08;
+  --dict-bg-opacity: 0.05;
+}
 
 /* Frequency Dicts (Also Kanji Dicts) */
 

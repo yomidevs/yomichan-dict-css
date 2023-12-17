@@ -1,5 +1,5 @@
 /* Darius Dictionary Colorizer
- * Last Updated 2023-11-24
+ * Last Updated 2023-12-16
  * The latest version can be found at
  * https://github.com/themoeway/yomichan-dict-css
  */
@@ -150,18 +150,22 @@
   --dict-bg-opacity: 0.03;
 }
 /* goo.ne.jp */
-.definition-item[data-dictionary^="使い方の分かる 類語例解辞典"],
-.definition-item[data-dictionary^="全国方言辞典"] {
+.definition-item[data-dictionary="使い方の分かる 類語例解辞典"],
+.definition-item[data-dictionary="全国方言辞典"] {
   --dict-color: #9c4836;
   --dict-bg-opacity: 0.03;
 }
-.definition-item[data-dictionary^="新語時事用語辞典"] {
+.definition-item[data-dictionary="新語時事用語辞典"] {
   --dict-color: #6e9ac6;
   --dict-bg-opacity: 0.07;
 }
-.definition-item[data-dictionary^="漢字ペディア同訓異義"] {
+.definition-item[data-dictionary="漢字ペディア同訓異義"] {
   --dict-color: #b7b7b7;
   --dict-bg-opacity: 0.12;
+}
+.definition-item[data-dictionary*="JA Wikipedia"] {
+  --dict-color: #447ff5;
+  --dict-bg-opacity: 0.03;
 }
 
 /* Kanji Dicts */

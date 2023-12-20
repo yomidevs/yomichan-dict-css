@@ -163,7 +163,7 @@
   --dict-color: #b7b7b7;
   --dict-bg-opacity: 0.12;
 }
-.definition-item[data-dictionary*="JA Wikipedia"] {
+.definition-item[data-dictionary*="Wikipedia"] {
   --dict-color: #447ff5;
   --dict-bg-opacity: 0.03;
 }

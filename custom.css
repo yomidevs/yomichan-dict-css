@@ -1,5 +1,5 @@
 /* Darius Dictionary Colorizer
- * Last Updated 2023-12-16
+ * Last Updated 2023-01-18
  * The latest version can be found at
  * https://github.com/themoeway/yomichan-dict-css
  */
@@ -167,6 +167,10 @@
   --dict-color: #447ff5;
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary^="漢検漢字辞典"] {
+  --dict-color: #e7a93a;
+  --dict-bg-opacity: 0.08;
+}
 
 /* Kanji Dicts */
 
@@ -187,6 +191,11 @@
 /* Same as JMdict */
 .tag[data-category="dictionary"][data-details^="KANJIDIC"] {
   --tag-color: rgb(0, 132, 255);
+}
+
+/* Hanzi Dicts */
+.tag[data-category="dictionary"][data-details^="CC-CEDICT"] {
+  --tag-color: rgb(32, 48, 64);
 }
 
 /* Pitch Accent */

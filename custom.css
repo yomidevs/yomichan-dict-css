@@ -256,9 +256,9 @@
   --dict-bg-opacity: 0.1;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary^="Words.hk"] {
-  --dict-color: rgb(96, 104, 112);
-  --dict-bg-opacity: 0.05;
+.definition-item[data-dictionary^="Words\.hk"] {
+  --dict-color: #ae1625;
+  --dict-bg-opacity: 0.03;
 }
 .definition-item[data-dictionary="CE Wiktionary"] {
   --dict-color: rgb(235, 206, 161);

@@ -1,4 +1,5 @@
 /* Darius Dictionary Colorizer
+ * Last Updated 2023-01-18
  * The latest version can be found at
  * https://github.com/themoeway/yomichan-dict-css
  */
@@ -62,6 +63,7 @@
   --dict-color: rgb(51, 51, 51);
   --dict-bg-opacity: 0.05;
 }
+/* jitenon */
 .definition-item[data-dictionary="四字熟語辞典オンライン"],
 .definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"],
 .definition-item[data-dictionary="国語辞典オンライン"] {
@@ -148,10 +150,64 @@
   --dict-bg-opacity: 0.03;
 }
 /* goo.ne.jp */
-.definition-item[data-dictionary^="使い方の分かる 類語例解辞典"],
-.definition-item[data-dictionary^="全国方言辞典"] {
+.definition-item[data-dictionary="使い方の分かる 類語例解辞典"],
+.definition-item[data-dictionary="全国方言辞典"] {
   --dict-color: #9c4836;
   --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary="新語時事用語辞典"] {
+  --dict-color: #6e9ac6;
+  --dict-bg-opacity: 0.07;
+}
+.definition-item[data-dictionary="漢字ペディア同訓異義"] {
+  --dict-color: #b7b7b7;
+  --dict-bg-opacity: 0.12;
+}
+.definition-item[data-dictionary*="Wikipedia"] {
+  --dict-color: #447ff5;
+  --dict-bg-opacity: 0.03;
+}
+.definition-item[data-dictionary^="漢検漢字辞典"] {
+  --dict-color: #e7a93a;
+  --dict-bg-opacity: 0.08;
+}
+
+/* Kanji Dicts */
+
+/* same color as earlier jitenon */
+.tag[data-category="dictionary"][data-details="漢字辞典オンライン"] {
+  --tag-color: rgb(255, 227, 124);
+  --tag-text-color: black;
+}
+.tag[data-category="dictionary"][data-details="JPDB Kanji"] {
+  --tag-color: #ff3e3d;
+}
+.tag[data-category="dictionary"][data-details="TheKanjiMap Kanji Radicals/Composition"] {
+  --tag-color: #2a94c9;
+}
+.tag[data-category="dictionary"][data-details*="Wiktionary"] {
+  --tag-color: #447ff5;
+}
+/* Same as JMdict */
+.tag[data-category="dictionary"][data-details^="KANJIDIC"] {
+  --tag-color: rgb(0, 132, 255);
+}
+
+/* Hanzi Dicts */
+.tag[data-category="dictionary"][data-details^="CC-CEDICT"] {
+  --tag-color: rgb(32, 48, 64);
+}
+
+/* Pitch Accent */
+
+.tag[data-category="pronunciation-dictionary"][data-details="NHK"] {
+  --tag-color: #0076d0;
+}
+.tag[data-category="pronunciation-dictionary"][data-details^="大辞泉"] {
+  --tag-color: rgb(170, 0, 0);
+}
+.tag[data-category="pronunciation-dictionary"][data-details^="大辞林"] {
+  --tag-color: rgb(85, 34, 85);
 }
 
 /* Chinese Dicts */
@@ -200,9 +256,9 @@
   --dict-bg-opacity: 0.1;
   --tag-text-color: black;
 }
-.definition-item[data-dictionary^="Words.hk"] {
-  --dict-color: rgb(96, 104, 112);
-  --dict-bg-opacity: 0.05;
+.definition-item[data-dictionary^="Words\.hk"] {
+  --dict-color: #ae1625;
+  --dict-bg-opacity: 0.03;
 }
 .definition-item[data-dictionary="CE Wiktionary"] {
   --dict-color: rgb(235, 206, 161);
@@ -213,11 +269,15 @@
   --dict-color: rgb(34, 34, 34);
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary="Wenlin ABC"] {
+  --dict-color: #ffca08;
+  --dict-bg-opacity: 0.05;
+}
 
-/* Frequency Dicts */
+/* Frequency Dicts (Also Kanji Dicts) */
 
 /* Japanese Frequency */
-.frequency-group-item[data-details="JPDB"] {
+.frequency-group-item[data-details^="JPDB"] {
   --tag-frequency-background-color: #ff3e3d;
 }
 .frequency-group-item[data-details^="Innocent"] {
@@ -235,11 +295,14 @@
 .frequency-group-item[data-details="Conversation Corpus"] {
   --tag-frequency-background-color: #273ce3;
 }
-.frequency-group-item[data-details="青空文庫熟語"] {
+.frequency-group-item[data-details^="青空文庫"] {
   --tag-frequency-background-color: #3d93ff;
 }
 .frequency-group-item[data-details="Youtube"] {
   --tag-frequency-background-color: #fd0101;
+}
+.frequency-group-item[data-details^="Wikipedia"] {
+  --tag-frequency-background-color: #447ff5;
 }
 
 /* Chinese Frequency */

@@ -210,7 +210,7 @@
   --tag-color: rgb(85, 34, 85);
 }
 
-/* Chinese Dicts */
+/* Mandarin Dicts */
 
 /* also covers Canto CEDICT */
 .definition-item[data-dictionary*="CEDICT"] {
@@ -251,6 +251,12 @@
   --dict-color: rgb(232, 25, 15);
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary="Wenlin ABC"] {
+  --dict-color: #ffca08;
+  --dict-bg-opacity: 0.05;
+}
+
+/* Cantonese Dicts */
 .definition-item[data-dictionary="CantoDict"] {
   --dict-color: rgb(203, 255, 212);
   --dict-bg-opacity: 0.1;
@@ -268,10 +274,6 @@
 .definition-item[data-dictionary="CC-Canto"] {
   --dict-color: rgb(34, 34, 34);
   --dict-bg-opacity: 0.03;
-}
-.definition-item[data-dictionary="Wenlin ABC"] {
-  --dict-color: #ffca08;
-  --dict-bg-opacity: 0.05;
 }
 
 /* Frequency Dicts (Also Kanji Dicts) */
@@ -305,7 +307,7 @@
   --tag-frequency-background-color: #447ff5;
 }
 
-/* Chinese Frequency */
+/* Mandarin Frequency */
 .frequency-group-item[data-details="HSK"] {
   --tag-frequency-background-color: #ff3e3d;
 }
@@ -327,5 +329,7 @@
 .frequency-group-item[data-details="BLCUsci"] {
   --tag-frequency-background-color: #3d93ff;
 }
+
+/* Cantonese Frequency */
 
 /* End Dictionary Colorizer */

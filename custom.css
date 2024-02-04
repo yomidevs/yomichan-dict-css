@@ -331,5 +331,8 @@
 }
 
 /* Cantonese Frequency */
+.frequency-group-item[data-details^="Words.hk"] {
+  --tag-frequency-background-color: #ae1625;
+}
 
 /* End Dictionary Colorizer */

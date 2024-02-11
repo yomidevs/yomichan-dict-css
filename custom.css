@@ -201,6 +201,11 @@
   --tag-color: rgb(32, 48, 64);
 }
 
+/* Honzi Dicts */
+.tag[data-category="dictionary"][data-details^="Words\.hk 粵典 漢字"] {
+  --tag-color: #ae1625;
+}
+
 /* Pitch Accent */
 
 .tag[data-category="pronunciation-dictionary"][data-details="NHK"] {
@@ -334,8 +339,14 @@
 }
 
 /* Cantonese Frequency */
-.frequency-group-item[data-details^="Words.hk"] {
+.frequency-group-item[data-details^="Words\.hk"] {
   --tag-frequency-background-color: #ae1625;
+}
+.frequency-group-item[data-details="Cifu Spoken"] {
+  --tag-frequency-background-color: #ff3e3d;
+}
+.frequency-group-item[data-details^="Cifu Written"] {
+  --tag-frequency-background-color: #e82c9c;
 }
 
 /* End Dictionary Colorizer */

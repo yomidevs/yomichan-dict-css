@@ -1,5 +1,5 @@
 /* Darius Dictionary Colorizer
- * Last Updated 2023-02-10
+ * Last Updated 2023-02-17
  * The latest version can be found at
  * https://github.com/themoeway/yomichan-dict-css
  */
@@ -173,6 +173,10 @@
 .definition-item[data-dictionary^="例解学習国語辞典"] {
   --dict-color: #faa72f;
   --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary^="現代国語例解辞典"] {
+  --dict-color: #e3323a;
+  --dict-bg-opacity: 0.04;
 }
 
 /* Kanji Dicts */

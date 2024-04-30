@@ -1,5 +1,5 @@
 /* Darius Dictionary Colorizer
- * Last Updated 2023-01-18
+ * Last Updated 2023-02-17
  * The latest version can be found at
  * https://github.com/themoeway/yomichan-dict-css
  */
@@ -64,9 +64,8 @@
   --dict-bg-opacity: 0.05;
 }
 /* jitenon */
-.definition-item[data-dictionary="四字熟語辞典オンライン"],
-.definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"],
-.definition-item[data-dictionary="国語辞典オンライン"] {
+.definition-item[data-dictionary$="辞典オンライン"],
+.definition-item[data-dictionary="故事・ことわざ・慣用句オンライン"] {
   --dict-color: rgb(255, 227, 124);
   --dict-bg-opacity: 0.05;
   --tag-text-color: black;
@@ -171,6 +170,14 @@
   --dict-color: #e7a93a;
   --dict-bg-opacity: 0.08;
 }
+.definition-item[data-dictionary^="例解学習国語辞典"] {
+  --dict-color: #faa72f;
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary^="現代国語例解辞典"] {
+  --dict-color: #e3323a;
+  --dict-bg-opacity: 0.04;
+}
 
 /* Kanji Dicts */
 
@@ -198,6 +205,11 @@
   --tag-color: rgb(32, 48, 64);
 }
 
+/* Honzi Dicts */
+.tag[data-category="dictionary"][data-details^="Words\.hk 粵典 漢字"] {
+  --tag-color: #ae1625;
+}
+
 /* Pitch Accent */
 
 .tag[data-category="pronunciation-dictionary"][data-details="NHK"] {
@@ -210,7 +222,7 @@
   --tag-color: rgb(85, 34, 85);
 }
 
-/* Chinese Dicts */
+/* Mandarin Dicts */
 
 /* also covers Canto CEDICT */
 .definition-item[data-dictionary*="CEDICT"] {
@@ -251,6 +263,12 @@
   --dict-color: rgb(232, 25, 15);
   --dict-bg-opacity: 0.03;
 }
+.definition-item[data-dictionary="Wenlin ABC"] {
+  --dict-color: #ffca08;
+  --dict-bg-opacity: 0.05;
+}
+
+/* Cantonese Dicts */
 .definition-item[data-dictionary="CantoDict"] {
   --dict-color: rgb(203, 255, 212);
   --dict-bg-opacity: 0.1;
@@ -268,10 +286,6 @@
 .definition-item[data-dictionary="CC-Canto"] {
   --dict-color: rgb(34, 34, 34);
   --dict-bg-opacity: 0.03;
-}
-.definition-item[data-dictionary="Wenlin ABC"] {
-  --dict-color: #ffca08;
-  --dict-bg-opacity: 0.05;
 }
 
 /* Frequency Dicts (Also Kanji Dicts) */
@@ -305,7 +319,7 @@
   --tag-frequency-background-color: #447ff5;
 }
 
-/* Chinese Frequency */
+/* Mandarin Frequency */
 .frequency-group-item[data-details="HSK"] {
   --tag-frequency-background-color: #ff3e3d;
 }
@@ -326,6 +340,17 @@
 }
 .frequency-group-item[data-details="BLCUsci"] {
   --tag-frequency-background-color: #3d93ff;
+}
+
+/* Cantonese Frequency */
+.frequency-group-item[data-details^="Words\.hk"] {
+  --tag-frequency-background-color: #ae1625;
+}
+.frequency-group-item[data-details="Cifu Spoken"] {
+  --tag-frequency-background-color: #ff3e3d;
+}
+.frequency-group-item[data-details^="Cifu Written"] {
+  --tag-frequency-background-color: #e82c9c;
 }
 
 /* End Dictionary Colorizer */

@@ -271,7 +271,7 @@
   --dict-color: rgb(200, 35, 31);
   --dict-bg-opacity: 0.05;
 }
-.definition-item[data-dictionary^="zdic"] {
+.definition-item[data-dictionary="zdic"] {
   --dict-color: rgb(241, 233, 230);
   --dict-bg-opacity: 0.05;
   --tag-text-color: black; 

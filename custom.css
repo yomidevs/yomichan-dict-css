@@ -274,6 +274,7 @@
 .definition-item[data-dictionary^="zdic"] {
   --dict-color: rgb(241, 233, 230);
   --dict-bg-opacity: 0.05;
+  --tag-text-color: black; 
 }
 .definition-item[data-dictionary^="500idioms"] {
   --dict-color: rgb(185, 25, 31);

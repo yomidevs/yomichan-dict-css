@@ -267,6 +267,19 @@
   --dict-color: #ffca08;
   --dict-bg-opacity: 0.05;
 }
+.definition-item[data-dictionary="中华成语大词典"] {
+  --dict-color: rgb(200, 35, 31);
+  --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="zdic"] {
+  --dict-color: rgb(241, 233, 230);
+  --dict-bg-opacity: 0.05;
+  --tag-text-color: black; 
+}
+.definition-item[data-dictionary="500idioms"] {
+  --dict-color: rgb(185, 25, 31);
+  --dict-bg-opacity: 0.05;
+}
 
 /* Cantonese Dicts */
 .definition-item[data-dictionary="CantoDict"] {

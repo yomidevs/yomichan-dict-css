@@ -276,7 +276,7 @@
   --dict-bg-opacity: 0.05;
   --tag-text-color: black; 
 }
-.definition-item[data-dictionary^="500idioms"] {
+.definition-item[data-dictionary="500idioms"] {
   --dict-color: rgb(185, 25, 31);
   --dict-bg-opacity: 0.05;
 }
